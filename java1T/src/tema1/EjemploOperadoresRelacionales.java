@@ -9,6 +9,7 @@ public class EjemploOperadoresRelacionales {
         int numero2 = 66;
         int numero3 = 100;
 
+
         System.out.println("Resultado (100 > 66) = " + (numero1 > numero2)); //Mayor
         System.out.println("Resultado (100 == 66) = " + (numero1 == numero2));  //Igual
         System.out.println("Resultado (100 == 100) = " + (numero1 == numero3)); //Igual
