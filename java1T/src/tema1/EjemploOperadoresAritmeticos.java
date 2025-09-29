@@ -18,5 +18,6 @@ public class EjemploOperadoresAritmeticos {
 
         System.out.println("resultado = " + resultado);
 
+
     }
 }
