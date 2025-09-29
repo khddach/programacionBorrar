@@ -45,5 +45,12 @@ public class EjemploOperadoresLogicos {
 
 
 
+        //"987654321"
+        //"987654321" --> longitud =  num. caractreres --> 9
+        String nombre = "Javier";
+        System.out.println(nombre.length());
+        System.out.println("Vinicius".length());
+
+
     }
 }
