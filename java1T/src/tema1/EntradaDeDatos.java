@@ -32,11 +32,7 @@ public class EntradaDeDatos
         System.out.println("la cadena es: " + cadena);
 
 
-        //hay pequeño defecto: cuando lees una cadena después de un entero o un double
-        //el enter después de escribir el número lo toma como la cadena al leer
 
-        //solucion 1 -> poner un sc.nextLine() antes de leer la cadena, para tragarse el enter
-        //solucion 2 -> leer siempre cadenas y transformarlas a números cuando seanbecesario
 
     }
 }
