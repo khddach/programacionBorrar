@@ -23,6 +23,18 @@ public class EjercicioOperadoresLogicos2 {
         resultado = (!tienePagosPendientes) && ((clienteVip && valorCompra > 100) || (!clienteVip && esCumpleaños && valorCompra > 50));
 
         System.out.println(resultado);
+
+
+
+
+
+
+
+
+        int num1 = 7 ;
+        int num2 = 3;
+
+        System.out.println();
     }
 }
 
