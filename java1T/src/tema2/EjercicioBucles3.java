@@ -32,6 +32,9 @@ public class EjercicioBucles3 {
 
             }
 
+            if (numero != numeroAAdivinar){
+                System.out.println("Te quedan " + (7-intentos) + " intentos");
+            }
             //EXTRA
             intentos++;
             if (intentos == 7){
