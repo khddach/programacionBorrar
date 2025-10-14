@@ -89,7 +89,7 @@ public class EjercicioIf2 {
 
             } else if ( (ingresosMensualesFamilia < 1000 && familiaNumerosa)
                     || ingresosMensualesFamilia < 1200
-                    || (ingresosMensualesFamilia < 1100 && zonaVulnerable)
+                    || (ingresosMensualesFamilia < 1100 && zonaVulnerable) ) {
 
                 System.out.println("BECA PARCIAL");
 
