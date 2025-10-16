@@ -18,5 +18,10 @@ public class EjemplosBucleSalto {
         //Prevencion evita el riesgo.
         //Protección reduce el daño
         // 1-prevención 2-protección colectiva 3-protección individual
+
+
+        //Paso1: hacer las cuatro tiradas
+        //Paso: hacer la suma de las tiradas de Cubitus, y la suma de las tiradas de humerus
+        //Paso3:
     }
 }
