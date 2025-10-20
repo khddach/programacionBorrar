@@ -7,7 +7,7 @@ public class EjemplosBucleSalto {
 
         //Accidente de trabajo: un suceso no esperado que causa daño.
         //Enfermedad profesional: una enfermedad lenta por causa del trabajo
-        //mobbing acoso o maltrato psicológico en el trabajo
+        //mobbing acoso o maltrato psicológico en el trabajo por parte de jefes o compañeros
         //envejecimiento prematuro: cuando el cuerpo envejece antes por un trabajo muy duro
 
         // resguardo es una barrera física que impide tocar
