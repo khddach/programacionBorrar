@@ -24,5 +24,9 @@ public class Ejercicio2 {
         pintarAsteriscos(3);
         pintarAsteriscos(2);
         pintarAsteriscos(1);
+        System.out.println();
+        for (int i = 1; i <= 5; i++) {
+            pintarAsteriscos(i);
+        }
     }
 }
