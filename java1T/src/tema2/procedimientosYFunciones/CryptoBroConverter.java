@@ -17,6 +17,20 @@ public class CryptoBroConverter {
         return bitcoin * 115375 ;
     }
 
+    public static double calcBitcoinToEthereum(double ethereum) {
+        return ethereum * 4206 ;
+    }
+
+    public static double calcBitcoinToDogecoin(double dogecoin) {
+        return dogecoin * 0.2044 ;
+    }
+
+    public static double calcBitcoinToXRP(double xrp) {
+        return xrp * 2.68 ;
+    }
+
+
+
     public static void main(String[] args) {
         //Hacer una aplicación que te permita saber cuántos euros son:
         //x monedas de una criptomoneda sabiendo su cambio:
