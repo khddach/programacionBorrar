@@ -11,11 +11,23 @@ public class Ejercicio6 {
         int numero = 1;
         int contador = 1;
 
+//        while (contador <= 100) {
+//            suma += numero;
+//            numero += 2;
+//            contador++;
+//        }
+
         while (contador <= 100) {
-            suma += numero;
-            numero += 2;
-            contador++;
+
+            if (numero % 2 != 0) {
+                suma += numero;
+                contador++;
+            }
+
+            numero += 1;
+
         }
+
         System.out.println("La suma de los primeros 100 números impares es " + suma);
 
 
