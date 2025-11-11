@@ -3,10 +3,9 @@ package tema3;
 public class TempHum {
 
 
-    public static int aleatorio(int max,int min) {
-        return (int) (Math.random() * (max-min+1)) + min;
+    public static int aleatorio(int max, int min) {
+        return (int) (Math.random() * (max - min + 1)) + min;
     }
-
 
 
     public static void main(String[] args) {
@@ -29,40 +28,35 @@ public class TempHum {
         double[] humedades = new double[100];
 
         double sumaTemperaturas = 0, sumaHumedades = 0;
-        double mediaTemperaturas= 0,mediaHumedades= 0;
+        double mediaTemperaturas = 0, mediaHumedades = 0;
 
 
+        for (int i = 0; i < temperaturas.length; i++) {
 
-        while (mediaTemperaturas < 30) {
+            temperaturas[i] = aleatorio(40, -20);
+            humedades[i] = aleatorio(100, 1);
 
-            for (int i = 0; i < temperaturas.length; i++) {
-
-                temperaturas[i] = aleatorio(40,-20);
-                sumaTemperaturas += temperaturas[i];
-
-            }
+            sumaTemperaturas += temperaturas[i];
+            sumaHumedades += humedades[i];
 
 
-            for (int i = 0; i < humedades.length; i++) {
-
-                humedades[i] = aleatorio(100,0);
-                sumaHumedades += humedades[i];
-            }
+            mediaTemperaturas = sumaTemperaturas / i + 1;
+            mediaHumedades = sumaHumedades / i + 1;
 
 
-            mediaTemperaturas = sumaTemperaturas / temperaturas.length;
-            mediaHumedades = sumaHumedades / humedades.length;
-
-            System.out.println("**********************************");
+            System.out.println("***************" + i + "******************");
             System.out.println("media temperaturas es : " + mediaTemperaturas);
             System.out.println("media Humedades es : " + mediaHumedades);
             System.out.println("**********************************");
             System.out.println();
 
-        }
 
-        if (mediaTemperaturas > 30) {
-            System.out.println("he superado la temperatura media permitida");
+
+            if (mediaTemperaturas > 10 && (i > 1)) {
+                System.out.println("he superado la temperatura media permitida");
+                break;
+            }
+
         }
 
     }
