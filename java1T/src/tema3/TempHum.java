@@ -40,11 +40,11 @@ public class TempHum {
             sumaHumedades += humedades[i];
 
 
-            mediaTemperaturas = sumaTemperaturas / i + 1;
-            mediaHumedades = sumaHumedades / i + 1;
+            mediaTemperaturas = sumaTemperaturas / (i + 1);
+            mediaHumedades = sumaHumedades / (i + 1);
 
 
-            System.out.println("***************" + i + "******************");
+            System.out.println("***************  " + i + "  ******************");
             System.out.println("media temperaturas es : " + mediaTemperaturas);
             System.out.println("media Humedades es : " + mediaHumedades);
             System.out.println("**********************************");
@@ -52,7 +52,7 @@ public class TempHum {
 
 
 
-            if (mediaTemperaturas > 10 && (i > 1)) {
+            if (mediaTemperaturas > 30 && (i > 1)) {
                 System.out.println("he superado la temperatura media permitida");
                 break;
             }
