@@ -51,6 +51,10 @@ public class FincaHumedad {
         return  sumaTotal / numeros.length;
     }
 
+    /**
+     *
+     * @param numeros
+     */
     public static void pintar(int[] numeros) {
 
         for (int i = 0; i < numeros.length; i++) {
@@ -62,7 +66,12 @@ public class FincaHumedad {
     }
 
 
-    public static boolean zonacritica(int[] numeros) {
+    /**
+     *
+     * @param numeros
+     * @return
+     */
+    public static boolean zonaCritica(int[] numeros) {
 
         boolean esCritica = false;
 
@@ -93,7 +102,7 @@ public class FincaHumedad {
          * Genera un array de ejemplo con 1000 valores aleatorios entre 0 y 100 para simular los sensores.
          */
 
-        int[] sensores = new int[1000];
+        int[] sensores = new int[20];
 
 
         for (int i = 0; i < sensores.length; i++) {
@@ -117,7 +126,7 @@ public class FincaHumedad {
 
         System.out.println("****************************");
         //zona crítica
-        System.out.println("zona crítica : " + zonacritica(sensores));
+        System.out.println("zona crítica : " + zonaCritica(sensores));
 
 
 
