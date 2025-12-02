@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AhorcadoSimple {
     public static void main(String[] args) {
         /**
-         * Implementa el juego del ahorcado con una palabra predefinida (ej: "JAVA").
+         * Implementa el juego del ahorcado con una palabra predefinida (ej.: "JAVA").
          * Muestra al inicio una serie de guiones (_) del tamaño de la palabra.
          * El jugador ingresa letras de una en una.
          * Si la letra está en la palabra, revela su posición (o posiciones) reemplazando el guión.
@@ -15,26 +15,24 @@ public class AhorcadoSimple {
          */
 
 
-
-
         String palabra = "amiga";
         Scanner sc = new Scanner(System.in);
         char letra;
-        int contador = 0;
-        int intentos = 6;
+        int contador = 0, intentos = 6;
 
 
-        String palabraX = "_".repeat(palabra.length()) ;
-        StringBuilder sb = new StringBuilder(palabraX);
+        String palabraX = "_".repeat(palabra.length());
+        StringBuffer sb = new StringBuffer(palabraX);
 
 
         while (true) {
 
-            System.out.println("palabra es " + sb.toString());
+            System.out.println("palabra es " + sb);
 
 
             if (intentos == 0) {
                 System.out.println("juego terminado");
+                break;
             }
 
             if (contador == palabra.length()) {
@@ -50,7 +48,7 @@ public class AhorcadoSimple {
             for (int i = 0; i < palabra.length(); i++) {
 
                 if (palabra.charAt(i) == letra && sb.charAt(i) != letra) {
-                    sb.setCharAt(i,letra);
+                    sb.setCharAt(i, letra);
                     contador++;
                     esChar = true;
                 }
@@ -58,15 +56,13 @@ public class AhorcadoSimple {
             }
 
 
-           if (!esChar) {
-               intentos--;
-               System.out.println("intentos es " + intentos);
-           }
-
+            if (!esChar) {
+                intentos--;
+                System.out.println("intentos es " + intentos);
+            }
 
 
         }
-
 
 
     }
