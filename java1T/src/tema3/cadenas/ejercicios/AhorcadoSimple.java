@@ -30,6 +30,9 @@ public class AhorcadoSimple {
 
         while (true) {
 
+            System.out.println("palabra es " + sb.toString());
+
+
             if (intentos == 0) {
                 System.out.println("juego terminado");
             }
@@ -39,11 +42,9 @@ public class AhorcadoSimple {
                 break;
             }
 
-            System.out.println("escribe una palabra :");
+            System.out.println("escribe una letra :");
+
             letra = sc.nextLine().charAt(0);
-
-
-
             boolean esChar = false;
 
             for (int i = 0; i < palabra.length(); i++) {
@@ -61,9 +62,6 @@ public class AhorcadoSimple {
                intentos--;
                System.out.println("intentos es " + intentos);
            }
-
-
-           System.out.println("palabra es " + sb.toString());
 
 
 
