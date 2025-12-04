@@ -40,6 +40,9 @@ public class Ejercicio6_m2 {
             sumTotal += dado1 ;
         }
 
+        System.out.println("D1: " + dado1 + " D2: " + dado2 + " D3: " + dado3 + " D4: " + dado4 + " D5: " + dado5);
+
+
         return sumTotal;
     }
 
@@ -64,6 +67,7 @@ public class Ejercicio6_m2 {
             sumTotal += dado1 ;
         }
 
+        System.out.println("D1: " + dado1 + " D2: " + dado2 + " D3: " + dado3);
 
         return sumTotal;
     }
