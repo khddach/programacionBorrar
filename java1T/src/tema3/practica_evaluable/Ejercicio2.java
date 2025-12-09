@@ -106,6 +106,7 @@ public class Ejercicio2 {
             numTiradas++;
             System.out.println("tirada num es "+ numTiradas);
             System.out.println("num color es " + numero);
+            System.out.println(buscarColor(numero));
         }
 
         System.out.println("numeros tiradas --> :" + numTiradas);
