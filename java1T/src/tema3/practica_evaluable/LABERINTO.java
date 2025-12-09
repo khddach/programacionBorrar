@@ -38,6 +38,7 @@ public class LABERINTO {
         lista[0][0] = "@";
         lista[lista.length - 1][0] = "#";
 
+
         return lista;
     }
 
@@ -74,12 +75,18 @@ public class LABERINTO {
     };
 
     public static void bomba(String[][] lista) {
+        int posX = 0;
+        int posY = 0;
 
-        int posX = aleatorio(lista.length - 1);
-        int posY = aleatorio(lista.length - 1);
+        do {
+            posX = aleatorio(lista.length - 1);
+            posY = aleatorio(lista.length - 1);
 
+            lista[posY][posX] = "X";
 
-        lista[posY][posX] = "X";
+        } while(posY != lista.length - 1 || posX != lista.length - 1
+                || posX!=0 || posY!=0);
+
 
         mostrarLista(lista);
 
