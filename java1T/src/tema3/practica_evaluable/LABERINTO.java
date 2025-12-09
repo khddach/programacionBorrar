@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class LABERINTO {
 
+    public static int aleatorio(int n) {
+        return (int) (Math.random() * n);
+    }
+
     public static String[][] initLista(String[][] lista) {
 
         for (int i = 0; i < lista.length; i++) {
@@ -69,10 +73,24 @@ public class LABERINTO {
 
     };
 
+    public static void bomba(String[][] lista) {
+
+        int posX = aleatorio(lista.length - 1);
+        int posY = aleatorio(lista.length - 1);
+
+
+        lista[posY][posX] = "X";
+
+        mostrarLista(lista);
+
+
+    }
+
     public static void listMenu(int menu) {
         switch (menu) {
             case 0:
                 String punto = "";
+                System.out.print("salir ");
                 for (int i = 0; i < 4; i++) {
                     punto += "-";
                     try {
@@ -82,7 +100,7 @@ public class LABERINTO {
                     }
                     System.out.print(punto + " ");
                 }
-                System.out.println("-----> salir");
+                System.out.println("-----> by by");
 
                 break;
             case 1:
@@ -111,10 +129,11 @@ public class LABERINTO {
         board = initLista(board);
 
         // pintar
-        mostrarLista(board);
+        bomba(board);
         do {
 
             System.out.println("******************************");
+            System.out.println("Introduce opcion :");
             System.out.println("0. salir");
             System.out.println("1. derecha");
             System.out.println("2. izquierda");
