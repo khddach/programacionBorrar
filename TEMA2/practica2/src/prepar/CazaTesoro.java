@@ -16,7 +16,7 @@ public class CazaTesoro {
      // Triángulo
      areaTriangulo = (B * h) / 2
      perimetroTriangulo = L1 + L2 + L3
-
+     IndexOutOfBoundsException
      // Rombo
      areaRombo = (D * d) / 2
      perimetroRombo = 4 * L
