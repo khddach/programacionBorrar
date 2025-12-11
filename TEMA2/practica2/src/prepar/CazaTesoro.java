@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CazaTesoro {
 
     /**
+     * (int)(Math.random() * (max - min + 1) + min)
      // Cuadrado
      areaCuadrado = L * L
      perimetroCuadrado = 4 * L
