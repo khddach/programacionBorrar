@@ -1,4 +1,4 @@
-package examen;
+package tema3.examen;
 
 import java.util.Scanner;
 // mohamed khddach

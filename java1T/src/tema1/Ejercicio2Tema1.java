@@ -24,7 +24,7 @@ public class Ejercicio2Tema1 {
 
 
         Scanner sc4 = new Scanner(System.in);
-        System.out.print("Dime la nota del examen: ");
+        System.out.print("Dime la nota del tema3.tema3.examen: ");
         exam = sc4.nextDouble();
 
 
