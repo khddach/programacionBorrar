@@ -1,7 +1,9 @@
 package tema4.Test;
 
 public class Personaje {
-    private static final int MAX_SALUD = 100;
+    private static final int MAX_SALUD = 200;
+    private static final int MAX_SALUD_INICIAL = MAX_SALUD / 4;
+    private static final int MAX_NIVEL = 20;
 
     // parameters
     private String nombre;
@@ -11,11 +13,18 @@ public class Personaje {
     private int damage;
     private int nivel;
 
-    //Constructor ini
+    /**
+     * Constructor ini
+     * @param nombre
+     * @param clase
+     * @param mana
+     * @param damage
+     * @param nivel
+     */
     public Personaje(String nombre, String clase, int mana,int damage,int nivel) {
         this.nombre = nombre;
         this.clase = clase;
-        this.salud = MAX_SALUD;
+        this.salud = MAX_SALUD / 4;
         this.mana = mana;
         this.damage = damage;
         this.nivel = nivel;
@@ -107,6 +116,7 @@ public class Personaje {
 //        }
         this.salud = Math.max(0,this.salud - vida) ;
 
+        // imaginar vida = -100;
         if (this.salud > MAX_SALUD) {
             this.salud = MAX_SALUD;
         }
@@ -115,11 +125,28 @@ public class Personaje {
 
     // methodo ponga la vida a 100.
     public void revivir() {
-        this.salud = 100;
+        this.salud = MAX_SALUD / 4;
     }
 
 
     public void atacar(Personaje pers) {
-        this.quitarSalud(pers.getDamage());
+
+        int damage = (int) ( pers.getDamage() * ( 1 + pers.getNivel() * 0.15 ) );
+        this.quitarSalud(damage);
+    }
+
+
+    public void voidUp() {
+        this.nivel += 1;
+        this.salud += 20;
+
+        if (this.nivel > MAX_NIVEL) {
+            this.nivel = MAX_NIVEL ;
+        }
+
+        if (this.salud > MAX_SALUD) {
+            this.salud = MAX_SALUD;
+        }
+
     }
 }
