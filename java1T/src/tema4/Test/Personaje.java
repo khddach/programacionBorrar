@@ -12,7 +12,7 @@ public class Personaje {
     private int mana;
     private int damage;
     private int nivel;
-v
+
     /**
      * Constructor ini
      * @param nombre
